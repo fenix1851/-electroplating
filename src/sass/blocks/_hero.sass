@@ -1,0 +1,84 @@
+.hero
+    grid-row-start: 3
+    grid-row-end: 6
+    grid-column-start: 8
+    justify-self: end
+    &-slider
+        grid-area: slider
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__number
+            font-size: 36px
+            color: #fff
+        &-progress
+            margin-top: 20px
+            margin-bottom: 20px
+            display: inline-block
+            height: 350px
+            width: 3px
+            background-color: #fff
+            position: relative
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                color: #00B076
+                background-color: #00B076
+                height: 25%
+                width: 100%
+                transition: .5s
+        &:hover
+            .hero-slider-progress::after
+                height: 100%
+    &-description
+        grid-row-start: 3
+        grid-row-end: 6
+        grid-column-start: 6
+        grid-column-end: 9
+        justify-content: flex-start
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+        
+        &-title              
+            font-weight: 500
+            font-size: 24px
+            color: #fff
+            text-transform: uppercase
+            &_first
+                position: relative
+                padding-top: 30px
+                &::before
+                    position: absolute
+                    content: '30'
+                    color: #00B076
+                    font-size: 96px
+                    bottom: 15px
+                    left: -42px
+            &_second
+                position: relative
+                padding-top: 30px
+                &::before
+                    position: absolute
+                    content: '76'
+                    color: #00B076
+                    font-size: 96px
+                    bottom: 15px
+                    left: -42px
+            &_third
+                position: relative
+                padding-top: 30px
+                &::before
+                    position: absolute
+                    content: '98%'
+                    color: #00B076
+                    font-size: 96px
+                    bottom: 15px
+                    left: -42px
+
+
+    
+
+              

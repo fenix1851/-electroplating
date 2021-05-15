@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before
+    box-sizing: border-box
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;700&display=swap');
+
+body
+    margin: 0
+    font-family: Cormorant
+
+.wraper
+    display: grid
+    grid-template-columns: repeat(8, auto)
+    grid-template-rows: 1fr 110px repeat(2, 162px) auto
+    grid-template-areas: "header header header header header header header header"
+
+.container
+    max-width: 1660px
+    margin: auto
+
+.background
+    &-video
+        width: 100vw
+        height: 100vh
+        overflow: hidden
+        z-index: -100
+        position: absolute
+        &__video
+            object-fit: contain
+        &_shadow
+            width: 100vw
+            height: 100vh
+            background-color: rgba(0,0,0,0.8)
+            z-index: -99
+            position: absolute
+            
