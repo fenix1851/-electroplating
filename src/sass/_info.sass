@@ -4,16 +4,26 @@
     box-sizing: border-box
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
 body
     margin: 0
     font-family: Cormorant
+    overflow: hidden
+    background-color: #1E1C1B
+
+    
+.showOverflows
+    overflow-y: scroll
 
 .wraper
     display: grid
     grid-template-columns: repeat(8, auto)
     grid-template-rows: 1fr 110px repeat(2, 162px) auto
     grid-template-areas: "header header header header header header header header"
+
+.dnone
+    opacity: 0
 
 .container
     max-width: 1660px

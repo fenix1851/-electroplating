@@ -1,0 +1,69 @@
+.inner
+    &-info
+        color: #fff
+        grid-row-start: 3
+        grid-column-start: 1
+        grid-column-end: 5
+        display: grid
+        width: 990px
+        grid-template-rows: repeat(2, auto)
+        grid-template-columns: 11.5% 1fr 10%
+        transform: translateX(-150%)
+        transition: 1.8s
+        &-2
+            grid-template-columns: 11.5% 1fr 5%
+                
+        &__title
+            text-transform: uppercase
+            font-size: 72px
+            font-weight: 400 
+            grid-column-start: 1
+            grid-column-end: 3                           
+        &__paragraf
+            font-size: 18px
+            font-weight: 300
+            grid-column-start: 2
+            grid-column-end: 3 
+            font-family: Comfortaa
+            line-height: 28.8px
+            
+
+.nextButton
+    margin: auto
+    display: flex
+    margin-top: 70px
+    padding: 40px 17px 40px 17px
+    font-size: 24px
+    color: #fff
+    font-family: Cormorant
+    text-transform: uppercase
+    border-radius: 50%
+    border: 1px solid #fff
+    background: none
+    transition-duration: .5s
+    &:hover
+        border: none
+        background-color: #00B076
+        border: 1px solid #00B076
+        
+
+
+.animateIn
+    transition: 1s
+    opacity: 1
+    transform: translateX(0)
+
+.animateOut
+    transition: .5s
+    opacity: 0
+    transform: translateX(30%)
+
+.bigIn
+    transform: scale(1.2, 1.2)
+    transition: .2s
+
+.dnone
+    opacity: 0
+    
+
+            
